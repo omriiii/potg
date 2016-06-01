@@ -9,4 +9,6 @@ Overwatch Play of the Game screenshot generator
 * Add a loading menu?
 * Add my twitter handle thing somewhere
 * Make `.menu` use angularJS to hide and show instead of all of that digustng jquery :Q
-* Make `.menu-input` or something so that I won't use margin-bottom on `input` but something more modular and clean
+
+### Possibilites for later
+* Make it so that each `label` and `input` don't have to be wrapped around a div
