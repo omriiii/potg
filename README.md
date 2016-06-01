@@ -8,4 +8,4 @@ Overwatch Play of the Game screenshot generator
 * Look into inset shadows for the player title (`.dos-string`)
 * Add a loading menu?
 * Add my twitter handle thing somewhere
-* 
+* Make `.menu` use angularJS to hide and show instead of all of that digustng jquery :Q
