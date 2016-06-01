@@ -1,9 +1,4 @@
-<!doctype html><html><head><link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" type="text/css"><link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous"><style>.fill
-		{
-			width: 100%;
-		}
-		
-		.scene
+<!doctype html><html><head><link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" type="text/css"><link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous"><style>.scene
 		{
 			background: url("/potg/res/graphics/bg.jpg");
 			height: 100%;
@@ -50,8 +45,8 @@
 		
 		.menu
 		{
-			height: 175px;
-			background-color: rgba(0,0,0,0.6);
+			height: 200px;
+			background-color: rgba(0,0,0,0.7);
 			overflow: hidden;
 			position: absolute;
 			bottom: 0;
@@ -68,10 +63,9 @@
 			border: 0;
 			border-bottom: 1px solid #aaa;
 			color: #aaa;
-			margin-top: 3px;
-			margin-bottom: 20px;
 			font-size: 14px;
 			font-family: "Open Sans";
+			margin-top: 15px;
 		}
 		
 		input:hover
@@ -98,23 +92,21 @@
 			text-shadow: 0 0 5px rgba(255,255,255,0.5); //pulsates
 		}
 		
-		.col-light-pad
-		{
-			padding-left: 10px;
-			padding-right: 10px;
-		}
-		
 		label
 		{
 			color: white;
-			width: 0;
-			position: absolute;
-			margin-top: -10px;
 			font-size: 10px;
 			letter-spacing: 1px;
 			font-family: "Open Sans";
 			font-weight: 300;
-		}</style><link href="/potg/res/css/style.css" rel="stylesheet"></head><body ng-app=""><main><div class="menu"><i class="fa fa-angle-down fa-2x show-hide-button js-show-hide-btn" aria-hidden="true"></i><div class="row col-md-6"><div class="col-md-4 col-light-pad"><label class="fill text-uppercase" for="uno-text">Uno</label><input class="fill" type="text" ng-model="unoString"></div><div class="col-md-4 col-light-pad"><label class="fill text-uppercase" for="dos-text">Dos</label><input class="fill" type="text" ng-model="dosString"></div><div class="col-md-4 col-light-pad"><label class="fill text-uppercase" for="tres-text">Tres</label><input class="fill" ype="text" ng-model="tresString"></div><div class="col-md-4 col-light-pad"><label class="fill text-uppercase" for="tres-text">Uno-Top</label><input class="fill" ype="text" ng-model="captionTop"></div><div class="col-md-4 col-light-pad"><label class="fill text-uppercase" for="tres-text">Uno-Left</label><input class="fill" ype="text" ng-model="captionLeft"></div><div class="col-md-4 col-light-pad"><label class="fill text-uppercase" for="tres-text">Uno-Size</label><input class="fill" ype="text" ng-model=""></div></div></div><div class="scene"><div class="scene__caption" ng-init="
+			position: absolute;
+		}
+		
+		.input-container
+		{
+			height: 40px;
+			margin-bottom: 10px;
+		}</style><link href="/potg/res/css/style.css" rel="stylesheet"></head><body ng-app=""><main><div class="menu"><i class="fa fa-angle-down fa-2x show-hide-button js-show-hide-btn" aria-hidden="true"></i><div class="col-md-6"><div class="col-md-4 col-light-pad"><div class="input-container"><label class="fill no-margin text-uppercase" for="uno-text">Uno</label><input class="fill" type="text" ng-model="unoString"></div><div class="input-container"><label class="fill no-margin text-uppercase" for="tres-text">Uno-Top</label><input class="fill" type="text" ng-model="unoTop"></div><div class="input-container"><label class="fill no-margin text-uppercase" for="tres-text">Uno-Left</label><input class="fill" type="text" ng-model="unoLeft"></div></div><div class="col-md-4 col-light-pad"><div class="input-container"><label class="fill no-margin text-uppercase" for="uno-text">Dos</label><input class="fill" type="text" ng-model="dosString"></div><div class="input-container"><label class="fill no-margin text-uppercase" for="tres-text">Dos-Top</label><input class="fill" type="text" ng-model="dosTop"></div><div class="input-container"><label class="fill no-margin text-uppercase" for="tres-text">Dos-Left</label><input class="fill" type="text" ng-model="dosLeft"></div></div><div class="col-md-4 col-light-pad"><div class="input-container"><label class="fill no-margin text-uppercase" for="uno-text">Tres</label><input class="fill" type="text" ng-model="tresString"></div><div class="input-container"><label class="fill no-margin text-uppercase" for="tres-text">Tres-Top</label><input class="fill" type="text" ng-model="tresTop"></div><div class="input-container"><label class="fill no-margin text-uppercase" for="tres-text">Tres-Left</label><input class="fill" type="text" ng-model="tresLeft"></div></div></div></div><div class="scene"><div class="scene__caption" ng-init="
 						unoString='Play of the Game';
 						dosString='Omnomrii'; 
 						tresString='As McCree';
@@ -145,8 +137,8 @@
 				else
 				{
 					$( ".menu" ).animate({
-						height: "175px",
-						backgroundColor: "rgba(0,0,0,0.75)"
+						height: "200px",
+						backgroundColor: "rgba(0,0,0,0.7)"
 					}, 350, "easeOutQuint", function() 
 					{
 						// Animation complete.

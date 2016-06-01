@@ -49,3 +49,16 @@ main {
   height: 100%;
   width: 100%;
 }
+
+.fill {
+  width: 100%;
+}
+
+.no-margin {
+  margin: 0 !important;
+}
+
+.col-light-pad {
+  padding-left: 10px;
+  padding-right: 10px;
+}
