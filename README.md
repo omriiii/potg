@@ -9,6 +9,7 @@ Overwatch Play of the Game screenshot generator
 * Make `.menu` use angularJS to hide and show instead of all of that digustng jquery :Q
 * Use `ng-repeat` http://jsfiddle.net/HB7LU/4269/ 
 * For images http://stackoverflow.com/questions/30525536/ng-repeat-images-in-folder
+* bg would stop repeating when it would
 
 ### Possibilites for later
 * Make it so that each `label` and `input` don't have to be wrapped around a div'
