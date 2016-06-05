@@ -1,204 +1,27 @@
-<!doctype html><html><head><!-- To do list's in the repository's readme: https://github.com/OmriN7/potg --><!-- META TAGS AND PAGE INFO --><!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~--><meta charset="utf-8"><!-- Viewport --><meta name="viewport" content="width=device-width,initial-scale=1"><title>PotG Generator</title><link rel="icon" href="/potg/res/graphics/icon.ico"><meta name="description" content="Overwatch PotG generator."><meta name="author" content="Omrii"><meta name="keywords" content="Overwatch, Overwatch potg, potg, Play of the game, Omrii"><meta name="robots" content="index, nofollow"><!-- Open Graph Metatags --><meta property="og:url" content="http://omrin7.github.io/potg"><meta property="og:title" content="Overwatch Generator"><meta property="og:description" content="Overwatch Generator"><meta property="og:image" content="/potg/res/graphics/meta-thumbnail.jpg"><!-- Twiiter Card Metatags --><meta name="twitter:card" content="summary"><meta name="twitter:creator" content="@OmriN7"><meta name="twitter:url" content="http://omrin7.github.io/potg"><meta name="twitter:title" content="Overwatch Generator"><meta name="twitter:description" content="Overwatch Generator"><meta name="twitter:image" content="http://omrin7.github.io/potg/res/graphics/meta-thumbnail.jpg"><!-- STYLESHEETS --><!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~--><!-- OVERWATCH GENERATOR STYLESHEET --><!-- TWEMOJI AWESOME CSS --><link href="/potg/res/css/style.css" rel="stylesheet"><link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" type="text/css"><link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous"><style>.scene
-		{
-			background-image: url("/potg/res/graphics/dva.jpg");
-			background-size: 100%;
-			height: 100%;
-			width: 100%;
-		}
-		
-		.scene__caption
-		{
-			position: absolute;
-		}
-		
-		.uno,
-		.dos,
-		.tres
-		{
-			line-height: 0.95;
-			font-family: BigNoodleToo;
-		}
-		
-		.uno
-		{
-			color: white;
-			font-size: 48px;
-			text-shadow: 0 0 3px rgba(255,255,255,0.5);
-			-webkit-text-shadow: 0 0 3px rgba(255,255,255,0.5);
-		}
-		
-		.dos
-		{
-			color: #F6ED2E;
-			font-size: 96px;
-			margin-left: 30px;
-			text-shadow: 0 0 5px #E8992C;
-			font-weight: unset;
-		}
-		
-		.tres
-		{	
-			color: white;
-			font-size: 38px;
-			margin-left: 65px;
-			text-shadow: 0 0 3px rgba(255,255,255,0.5);	
-		}
-		
-		.menu
-		{
-			height: 200px;
-			background-color: rgba(0,0,0,0.7);
-			overflow: hidden;
-			position: absolute;
-			bottom: 0;
-			width: 100%;
-			z-index: 1;
-		}
-		
-		input
-		{
-			transition: 0.2s;
-			-webkit-transition: 0.2s;
-			
-			background: transparent; 
-			border: 0;
-			border-bottom: 1px solid #aaa;
-			color: #aaa;
-			font-size: 14px;
-			font-family: "Open Sans";
-			margin-top: 15px;
-		}
-		
-		input:hover
-		{
-			border-bottom: 1px solid #fff;
-		}
-		
-		
-		input:focus
-		{
-			color: #fff;
-			border-bottom: 1px solid #fff;
-			text-shadow: 0 0 1px rgba(255,255,255,0.1); 
-			outline: none;
-		}
-		
-		.show-hide-button
-		{
-			display: block;
-			width: 100%;
-			text-align: center;
-			color: white;
-			line-height: 27px !important;
-			text-shadow: 0 0 5px rgba(255,255,255,0.5); //pulsates
-		}
-		
-		label
-		{
-			color: white;
-			font-size: 10px;
-			letter-spacing: 1px;
-			font-family: "Open Sans";
-			font-weight: 300;
-			position: absolute;
-		}
-		
-		.input-container
-		{
-			height: 40px;
-			margin-bottom: 10px;
-		}
-		
-		.radio-label
-		{
-			border-radius: 5px;
-			height: 40px;
-			margin-bottom: 8px;
-			margin-top: 3px;
-		}
-		
-		
-		/* hide input */
-		.radio-input:empty {
-			margin-left: -9999px;
-		}
-
-		/* style label */
-		.radio-input:empty ~ label 
-		{
-			position: relative;
-			float: left;
-			cursor: pointer;
-			-webkit-user-select: none;
-			-moz-user-select: none;
-			-ms-user-select: none;
-			user-select: none;
-			background: #1787E5;
-		}
-
-		/* toggle hover */
-		.radio-input:hover:not(:checked) ~ label 
-		{
-			color: #888;
-		}
-
-		/* toggle on */
-		.radio-input:checked ~ label 
-		{
-			background: #37D360;
-		}
-
-		/* radio focus */
-		.radio-input:focus ~ label 
-		{
-			box-shadow: 0 0 0 3px #999;
-		}</style></head><body ng-app=""><main><form class="menu"><i class="fa fa-angle-down fa-2x show-hide-button js-show-hide-btn" aria-hidden="true"></i><div class="col-md-6"><div class="col-md-4 col-light-pad"><div class="input-container"><label class="fill no-margin text-uppercase" for="uno-text">Uno</label><input class="fill" type="text" name="uno-text" ng-model="unoString"></div><div class="input-container"><label class="fill no-margin text-uppercase" for="uno-top">Uno-Top</label><input class="fill" type="text" name="uno-top" ng-model="unoTop"></div><div class="input-container"><label class="fill no-margin text-uppercase" for="uno-left">Uno-Left</label><input class="fill" type="text" name="uno-left" ng-model="unoLeft"></div></div><div class="col-md-4 col-light-pad"><div class="input-container"><label class="fill no-margin text-uppercase" for="dos-text">Dos</label><input class="fill" type="text" name="dos-text" ng-model="dosString"></div><div class="input-container"><label class="fill no-margin text-uppercase" for="dos-top">Dos-Top</label><input class="fill" type="text" name="dos-top" ng-model="dosTop"></div><div class="input-container"><label class="fill no-margin text-uppercase" for="dos-left">Dos-Left</label><input class="fill" type="text" name="dos-left" ng-model="dosLeft"></div></div><div class="col-md-4 col-light-pad"><div class="input-container"><label class="fill no-margin text-uppercase" for="tres-text">Tres</label><input class="fill" type="text" name="tres-text" ng-model="tresString"></div><div class="input-container"><label class="fill no-margin text-uppercase" for="tres-top">Tres-Top</label><input class="fill" type="text" name="tres-top" ng-model="tresTop"></div><div class="input-container"><label class="fill no-margin text-uppercase" for="tres-left">Tres-Left</label><input class="fill" type="text" name="tres-left" ng-model="tresLeft"></div></div></div><!--
-				
-				<div class="col-md-6">
-					<div class="col-md-4 col-light-pad" ng-repeat="n in ['uno', 'dos', 'tres'] track by $index">
-						{{n}}
-					</div>
-				</div>
-				
-				--><div class="col-md-6"><div class="col-md-2"><div><input class="radio-input" type="radio" value="mei" ng-model="bgImg" name="radio" id="radio4"><label class="radio-label fill" for="radio4">&nbsp;</label></div><div><input class="radio-input" type="radio" value="dva" ng-model="bgImg" name="radio" id="radio3"><label class="radio-label fill" for="radio3">&nbsp;</label></div><div><input class="radio-input" type="radio" value="genji" ng-model="bgImg" name="radio" id="radio2"><label class="radio-label fill" for="radio2">&nbsp;</label></div></div></div></form><div class="scene" style="background-image: url('/potg/res/graphics/{{bgImg}}.jpg')"><div class="scene__caption" ng-init="
-						unoString='Play of the Game';
-						dosString='Omnomrii'; 
-						tresString='As McCree';
-						captionTop='16%';
+<!doctype html><html><head><!-- To do list's in the repository's readme: https://github.com/OmriN7/potg --><!-- META TAGS AND PAGE INFO --><!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~--><meta charset="utf-8"><!-- Viewport --><meta name="viewport" content="width=device-width,initial-scale=1"><title>PotG Generator</title><link rel="icon" href="/potg/res/graphics/icon.ico"><meta name="description" content="Overwatch PotG generator."><meta name="author" content="Omrii"><meta name="keywords" content="Overwatch, Overwatch potg, potg, Play of the game, Omrii"><meta name="robots" content="index, nofollow"><!-- Open Graph Metatags --><meta property="og:url" content="http://omrin7.github.io/potg"><meta property="og:title" content="Overwatch Generator"><meta property="og:description" content="Overwatch Generator"><meta property="og:image" content="/potg/res/graphics/meta-thumbnail.jpg"><!-- Twiiter Card Metatags --><meta name="twitter:card" content="summary"><meta name="twitter:creator" content="@OmriN7"><meta name="twitter:url" content="http://omrin7.github.io/potg"><meta name="twitter:title" content="Overwatch Generator"><meta name="twitter:description" content="Overwatch Generator"><meta name="twitter:image" content="http://omrin7.github.io/potg/res/graphics/meta-thumbnail.jpg"><!-- STYLESHEETS --><!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~--><!-- OVERWATCH GENERATOR STYLESHEET --><!-- TWEMOJI AWESOME CSS --><!-- BOOTSTRAP CSS --><link href="/potg/res/css/style.css" rel="stylesheet"><link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" type="text/css"><!-- angualr --><script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script><style>.bg--0 { background-image: url("/potg/res/graphics/mei.jpg"); }
+		.bg--1 { background-image: url("/potg/res/graphics/dva.jpg"); }
+		.bg--2 { background-image: url("/potg/res/graphics/genji.jpg"); }</style></head><body ng-app=""><main ng-init="
+				captionTop='16%';
 						captionLeft='14%';
-						unoTop='0';
-						unoLeft='0';
-						dosTop='0';
-						dosLeft='30px';
-						tresTop='0';
-						tresLeft='65px';
 						bgImg='dva';
-					" style="margin-top: {{captionTop}}; 
-						margin-left: {{captionLeft}}"><div class="uno" style="margin-top: {{unoTop}}; margin-left: {{unoLeft}}">{{unoString}}</div><div class="dos" style="margin-top: {{dosTop}}; margin-left: {{dosLeft}}">{{dosString}}</div><div class="tres" style="margin-top: {{tresTop}}; margin-left: {{tresLeft}}">{{tresString}}</div></div></div></main><!-- jquery --><script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script><!-- jquery ui --><script src="https://code.jquery.com/ui/1.12.0-rc.2/jquery-ui.min.js" integrity="sha256-55Jz3pBCF8z9jBO1qQ7cIf0L+neuPTD1u7Ytzrp2dqo=" crossorigin="anonymous"></script><!-- jquery colors --><script src="https://code.jquery.com/color/jquery.color-2.1.2.min.js" integrity="sha256-H28SdxWrZ387Ldn0qogCzFiUDDxfPiNIyJX7BECQkDE=" crossorigin="anonymous"></script><!-- angualr --><script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script><script>var menuShow = true;
-			$(".js-show-hide-btn").click(function() 
-			{
-				
-				if(menuShow == true)
-				{
-					
-					$( ".menu" ).animate({
-						height: "30px",
-						backgroundColor: "rgba(0,0,0,0.3)"
-					}, 350, "easeOutQuint", function() 
-					{
-						// Animation complete.
-					});
-				}
-				else
-				{
-					$( ".menu" ).animate({
-						height: "200px",
-						backgroundColor: "rgba(0,0,0,0.7)"
-					}, 350, "easeOutQuint", function() 
-					{
-						// Animation complete.
-					});
-				}
-				
-				menuShow = !menuShow;
-			});</script></body></html>
+						
+						
+				lineVars = 
+				[
+					[
+						'Play of the Game',
+						'0',
+						'0'
+					],
+					[
+						'Omnomrii',
+						'0',
+						'30px'
+					],
+					[
+						'As McCree',
+						'0',
+						'65px'
+					]
+				]
+					"><form class="menu menu-hide-anim" ng-hide="showMenu"><input id="box1" class="input-checkbox-primary" type="checkbox" ng-model="showMenu" aria-label="Toggle ngShow"><label for="box1" class="label-checkbox-primary fill text-center no-margin"></label><div class="col-md-6"><div class="col-md-4" ng-repeat="n in ['uno', 'dos', 'tres']"><div class="input-container"><label class="fill no-margin text-uppercase" for="{{n}}-text">{{n}}</label><input class="fill" type="text" name="{{n}}-text" ng-model="lineVars[$index][0]"></div><div class="input-container"><label class="fill no-margin text-uppercase" for="{{n}}-top">{{n}}-Top</label><input class="fill" type="text" name="{{n}}-top" ng-model="lineVars[$index][1]"></div><div class="input-container"><label class="fill no-margin text-uppercase" for="{{n}}-left">{{n}}-Left</label><input class="fill" type="text" name="{{n}}-left" ng-model="lineVars[$index][2]"></div></div></div><div class="col-md-6"><div class="col-md-2"><div><input class="radio-input" type="radio" value="mei" ng-model="bgImg" name="radio" id="radio4"><label class="radio-label fill bg--0" for="radio4">&nbsp;</label></div><div><input class="radio-input" type="radio" value="dva" ng-model="bgImg" name="radio" id="radio3"><label class="radio-label fill bg--1" for="radio3">&nbsp;</label></div><div><input class="radio-input" type="radio" value="genji" ng-model="bgImg" name="radio" id="radio2"><label class="radio-label fill bg--2" for="radio2">&nbsp;</label></div></div></div></form><div class="scene" style="background-image: url('/potg/res/graphics/{{bgImg}}.jpg')"><div class="scene__caption"><div ng-repeat="n in ['uno', 'dos', 'tres'] track by $index" class="{{n}}" style="margin-top: {{lineVars[$index][1]}}; margin-left: {{lineVars[$index][2]}}">{{lineVars[$index][0]}}</div></div></div></main></body></html>
