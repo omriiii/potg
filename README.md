@@ -16,7 +16,7 @@ Warning: as of right now the code is pretty spaghetti all around. Don't use it f
 * Clean up code by using a controller or whatever (finish the course)
 * Reuse gulp-uncss and ignore all the classes that are used inside ng-repeat
 
-#### second https://codemyviews.com/blog/inner-shadows-in-css-images-text-and-beyond
+#### second
 * Add my twitter handle thing somewhere
 * For images http://stackoverflow.com/questions/30525536/ng-repeat-images-in-folder
 * bg would stop repeating when it would
