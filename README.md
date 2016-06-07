@@ -12,8 +12,6 @@ Warning: as of right now the code is pretty spaghetti all around. Don't use it f
 ### to do
 
 #### first
-* ng-repeats with variables that are initiated in ng-init http://jsfiddle.net/HB7LU/4269/ 
-* Clean up code by using a controller or whatever (finish the course)
 * Reuse gulp-uncss and ignore all the classes that are used inside ng-repeat
 
 #### second
@@ -29,3 +27,4 @@ Warning: as of right now the code is pretty spaghetti all around. Don't use it f
 * Look into inset shadows for the player title (`.dos-string`)
 * Make it so that each `label` and `input` don't have to be wrapped around a div'
 * Add more a modifier for all of the caption and a modifier to the `font-size`
+* Put two nested `ng-repeat`s where possible (left side of the menu)
