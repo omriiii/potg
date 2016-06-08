@@ -12,7 +12,6 @@ Warning: as of right now the code is pretty spaghetti all around. Don't use it f
 ### to do
 
 #### first
-* Reuse gulp-uncss and ignore all the classes that are used inside ng-repeat
 * Add my twitter handle thing somewhere
 * bg would stop repeating when it would
 * Custom images
