@@ -15,6 +15,7 @@ Warning: as of right now the code is pretty spaghetti all around. Don't use it f
 * Add my twitter handle thing somewhere
 * bg would stop repeating when it would
 * Custom images
+* Can move caption w/ mouse https://jsfiddle.net/tovic/Xcb8d/
 
 
 
@@ -24,3 +25,4 @@ Warning: as of right now the code is pretty spaghetti all around. Don't use it f
 * Make it so that each `label` and `input` don't have to be wrapped around a div'
 * Add more a modifier for all of the caption and a modifier to the `font-size`
 * Put two nested `ng-repeat`s where possible (left side of the menu)
+* Advanced menu with: font-size, color, 
