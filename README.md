@@ -13,7 +13,7 @@ Warning: as of right now the code is pretty spaghetti all around. Don't use it f
 
 #### first
 * Add my twitter handle thing somewhere
-* bg would stop repeating when it would
+* Fix the bug where you start to drag the caption, the text snaps to the top left.
 
 
 
@@ -23,4 +23,4 @@ Warning: as of right now the code is pretty spaghetti all around. Don't use it f
 * Make it so that each `label` and `input` don't have to be wrapped around a div'
 * Add more a modifier for all of the caption and a modifier to the `font-size`
 * Put two nested `ng-repeat`s where possible (left side of the menu)
-* Advanced menu with: font-size, color, 
+* Advanced menu with: font-size, color, background config
