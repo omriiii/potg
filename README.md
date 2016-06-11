@@ -14,8 +14,6 @@ Warning: as of right now the code is pretty spaghetti all around. Don't use it f
 #### first
 * Add my twitter handle thing somewhere
 * bg would stop repeating when it would
-* Custom images
-* Can move caption w/ mouse https://jsfiddle.net/tovic/Xcb8d/
 
 
 
