@@ -12,7 +12,10 @@ Warning: as of right now the code is pretty spaghetti all around. Don't use it f
 ### to do
 
 #### first
-* Add my twitter handle thing somewhere
+* Finish the header 
+* -> Normalize the anchor tag
+* -> Add the consolas font
+* -> Make the fly in animation all cool
 * Unify js code and add Uglify.
 
 
