@@ -13,7 +13,6 @@ Warning: as of right now the code is pretty spaghetti all around. Don't use it f
 
 #### first
 * Add my twitter handle thing somewhere
-* Fix the bug where you start to drag the caption, the text snaps to the top left.
 * Unify js code and add Uglify.
 
 
