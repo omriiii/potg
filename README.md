@@ -13,6 +13,7 @@ Warning: as of right now the code is pretty spaghetti all around. Don't use it f
 
 #### first
 * Unify js code and add Uglify.
+* Fix Chrome font-awesome bug
 
 
 
