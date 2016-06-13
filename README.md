@@ -6,8 +6,7 @@ Overwatch Play of the Game screenshot generator
 *gh-branch* - Distribution code
 
 ### Possibilites for later
-* Add a loading menu?
-* Look into inset shadows for the player title (`.dos-string`) https://css-tricks.com/adding-stroke-to-web-text/
-* Add more a modifier for all of the caption and a modifier to the `font-size`
+* Add a loading animation thing
+* Look into inset shadows for the player title (`.dos-string`) https://css-tricks.com/adding-stroke-to-web-text/ 
 * Put two nested `ng-repeat`s where possible (left side of the menu)
-* Advanced menu with: font-size, color, background config
+* Advanced menu with: `font-size`, `color`, direct control of the caption offset and  `background` coordinates config maybe :0
