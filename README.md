@@ -5,19 +5,6 @@ Overwatch Play of the Game screenshot generator
 
 *gh-branch* - Distribution code
 
-Warning: as of right now the code is pretty spaghetti all around. Don't use it for reference please.
-
-
-
-### to do
-
-#### first
-* -> dl fonts and have them locally
-* -> Add 3 more pics
-* Fix Chrome font-awesome bug
-
-
-
 ### Possibilites for later
 * Add a loading menu?
 * Look into inset shadows for the player title (`.dos-string`) https://css-tricks.com/adding-stroke-to-web-text/
