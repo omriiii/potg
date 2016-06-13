@@ -1,0 +1,146 @@
+.scene
+{
+	background-image: url("/potg/res/graphics/dva.jpg");
+	background-size: 100%;
+	height: 100%;
+	width: 100%;
+}
+
+
+.scene__caption
+{
+	position: absolute;
+	top: 32%;
+	left: 14%;
+}
+
+.uno,
+.dos,
+.tres
+{
+	line-height: 0.95;
+	font-family: BigNoodleToo;
+}
+
+.uno,
+.tres
+{
+	color: white;
+	text-shadow: 0 0 3px rgba(0,0,0,0.5);
+	-webkit-text-shadow: 0 0 3px rgba(0,0,0,0.5);
+	max-width: 35vw;
+	word-spacing: 0.075em;
+}
+
+.uno
+{
+	font-size: 48px;
+}
+
+.dos
+{
+	color: #F6ED2E;
+	font-size: 96px;
+	margin-left: 30px;
+	text-shadow: 0 0 5px #E8992C;
+	max-width: 40vw;
+}
+
+.tres
+{	
+	font-size: 38px;
+	margin-left: 65px;
+}
+
+.menu
+{ 
+	padding-bottom: 20px;
+	background-color: rgba(0,0,0,0.7);
+	overflow: hidden;
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	z-index: 1;
+}
+
+
+.menu.ng-hide 
+{
+	background-color: rgba(0,0,0,0.3);
+}
+
+
+.menu-hide-anim 
+{
+	transition: 0.35s;
+	-webkit-transition: 0.35s;
+	
+	-webkit-transition-timing-function: cubic-bezier(.11,.92,.5,.98); /* Safari and Chrome */
+	transition-timing-function: cubic-bezier(.11,.92,.5,.98);
+	
+	height: 350px;
+}
+
+.menu-hide-anim.ng-hide 
+{
+	height: 30px;
+}
+
+.menu-hide-anim.ng-hide 
+{
+	display: block!important;
+}
+
+.header-hide-anim
+{
+
+	transition: 0.35s;
+	-webkit-transition: 0.35s;
+	
+	-webkit-transition-timing-function: cubic-bezier(.11,.92,.5,.98); /* Safari and Chrome */
+	transition-timing-function: cubic-bezier(.11,.92,.5,.98);
+	
+	margin-top: 0;
+	
+}
+.header-hide-anim.ng-hide 
+{
+	display: block!important;
+	margin-top: -40px;
+}
+
+.header-primary
+{
+	color: white;
+	padding: 10px 15px;
+	position: absolute;    
+	
+	height: 40px;
+	
+	background: #000; /* For browsers that do not support gradients */
+	background: -webkit-linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0)); /* For Safari 5.1 to 6.0 */
+	background: -o-linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0)); /* For Opera 11.1 to 12.0 */
+	background: -moz-linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0)); /* For Firefox 3.6 to 15 */
+	
+	background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0)); /* Standard syntax */
+}
+
+.header-primary__text
+{
+	line-height: 20px;
+	font-size: 14px;
+}
+
+.header-primary__text--left
+{
+	font-family: Inconsolata;
+}
+
+
+@media (min-width: 992px) 
+{
+	.menu-hide-anim 
+	{
+		height: 200px;
+	}
+}

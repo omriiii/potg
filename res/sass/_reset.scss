@@ -1,0 +1,43 @@
+
+::-moz-selection
+{
+    background: #37D360;
+	color: white;
+	
+}
+::selection
+{
+    background: #37D360;
+	color: white;
+	
+}
+
+
+html 
+{
+	height: 100%;
+}
+
+body
+{
+	height: 100%;
+	padding: 0;
+	margin: 0;
+	overflow: hidden;
+}
+
+main
+{
+	height: 100%;
+	width: 100%;
+}
+
+a,
+a:hover ,
+a:active,
+a:visited,
+a:link
+{
+	color: inherit;
+	cursor: pointer !important;
+}

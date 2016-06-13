@@ -1,0 +1,36 @@
+//.fill
+//.no-margin
+//col-light-ad
+
+
+.fill
+{
+	width: 100%;
+}
+
+.no-margin
+{
+	margin: 0 !important;
+}
+
+.col-light-pad
+{
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+.col-superlight-pad
+{
+	padding-left: 5px;
+	padding-right: 5px;
+}
+
+.draggable
+{
+	cursor:move;
+}
+
+.text-color-twitter
+{
+	color: $color-twitter;
+}

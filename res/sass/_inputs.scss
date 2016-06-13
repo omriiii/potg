@@ -1,0 +1,147 @@
+input
+{
+	transition: 0.2s;
+	-webkit-transition: 0.2s;
+	
+	background: transparent; 
+	border: 0;
+	border-bottom: 1px solid #aaa;
+	color: #aaa;
+	font-size: 14px;
+	font-family: "Open Sans";
+	margin-top: 15px;
+}
+
+input:hover
+{
+	border-bottom: 1px solid #fff;
+}
+
+
+input:focus
+{
+	color: #fff;
+	border-bottom: 1px solid #fff;
+	text-shadow: 0 0 1px rgba(255,255,255,0.1); 
+	outline: none;
+}
+
+label
+{
+	color: white;
+	font-size: 10px;
+	letter-spacing: 1px;
+	font-family: "Open Sans";
+	font-weight: 300;
+	position: absolute;
+}
+
+.input-container
+{
+	height: 40px;
+	margin-bottom: 10px;
+}
+
+.radio-label
+{
+	border-radius: 5px;
+	height: 40px;
+	margin-bottom: 8px;
+	margin-top: 3px;
+}
+
+
+/* hide input */
+.radio-input:empty {
+	margin-left: -9999px;
+}
+
+/* style label */
+.radio-input:empty ~ label 
+{
+	transition: 0.2s;
+	position: relative;
+	float: left;
+	cursor: pointer;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	background-size: 100% auto;
+	background-position: top center;
+}
+
+/* toggle hover */
+.radio-input:hover:not(:checked) ~ label 
+{
+	color: #888;
+}
+
+/* toggle on */
+.radio-input:checked ~ label 
+{
+	background-size: 105% auto;
+	box-shadow: 0 0 2px 2px #aaa;
+}
+
+/* radio focus */
+.radio-input:focus ~ label 
+{
+	box-shadow: 0 0 2px 2px #aaa;
+}
+
+
+/* to hide the checkbox itself */
+.input-checkbox-primary 
+{ 
+	display: none; 
+} 
+
+.label-checkbox-primary
+{
+	display: inline-block;
+	position: relative;
+	
+	height: 30px;
+	line-height: 30px !important;
+	
+	cursor: pointer;
+}
+
+/* Style unchecked */
+.input-checkbox-primary + .label-checkbox-primary:before 
+{
+	color: white;
+	text-shadow: 0 0 5px rgba(255,255,255,0.5); //pulsates
+	font-family: FontAwesome;
+	content: "\f107";
+	
+	font-size: 28px;
+	
+	transition: 0.35s;
+	-webkit-transition: 0.35s;
+	
+	-webkit-transition-timing-function: cubic-bezier(.11,.92,.5,.98); /* Safari and Chrome */
+	transition-timing-function: cubic-bezier(.11,.92,.5,.98);
+	
+	-ms-transform: rotate(0deg); /* IE 9 */
+    -webkit-transform: rotate(0deg); /* Chrome, Safari, Opera */
+    transform: rotate(0deg);
+	
+	display: inline-block;
+	
+}
+
+/* Style checked */
+.input-checkbox-primary:checked + .label-checkbox-primary:before 
+{ 
+	-ms-transform: rotate(540deg); /* IE 9 */
+    -webkit-transform: rotate(540deg); /* Chrome, Safari, Opera */
+    transform: rotate(540deg);
+	
+} 
+
+input[type=file] 
+{
+	display: initial;
+}
