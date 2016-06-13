@@ -1,5 +1,5 @@
 
-//gup requirements
+//gulp requirements
 var gulp = require('gulp');
 var sass = require('gulp-sass');
 var htmlmin = require('gulp-htmlmin');
@@ -30,13 +30,13 @@ var jsSrcExc = srcRoot + 'res/js/imageupload.js';
 
 function defineProjectName(projectName)
 {
-	if(projectName == '')
+	if(projectName)
 	{
-		return ('');
+		return (projectName + '/');
 	}
 	else
 	{
-		return (projectName + '/');
+		return ('');
 	}
 }
 
