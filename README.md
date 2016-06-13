@@ -12,10 +12,8 @@ Warning: as of right now the code is pretty spaghetti all around. Don't use it f
 ### to do
 
 #### first
-* Unify js code and add Uglify.
-* -> Reuse uglify
-* -> gulp-contact
 * -> dl fonts and have them locally
+* -> Add 3 more pics
 * Fix Chrome font-awesome bug
 
 
