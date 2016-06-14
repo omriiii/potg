@@ -11,6 +11,7 @@ Overwatch Play of the Game screenshot generator
 * Implament screen capping option -> Both all of screen and Gyazo "select" type.
 * Change user's name to "Drag me"
 * Add a font modifier and a color modifier and switch the "x-top" and "x-left"'s.
+* Flip vk0 and consider changing the images of the heros to some other images with more potential
 
 ### Possibilites for later
 * Add a loading animation thing
