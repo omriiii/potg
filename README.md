@@ -6,7 +6,11 @@ Overwatch Play of the Game screenshot generator
 *gh-branch* - Distribution code
 
 ### TO DO 
-- REUSE UNCSS 
+* Reuse gulp-uncss
+* Use ng-style instead of inline styling
+* Implament screen capping option -> Both all of screen and Gyazo "select" type.
+* Change user's name to "Drag me"
+* Add a font modifier and a color modifier and switch the "x-top" and "x-left"'s.
 
 ### Possibilites for later
 * Add a loading animation thing
