@@ -1,4 +1,4 @@
-omrin7.github.io/potg/ (omrin7.github.io/potg/)
+[omrin7.github.io/potg/] (omrin7.github.io/potg/)
 # potg
 Overwatch Play of the Game screenshot generator
 
